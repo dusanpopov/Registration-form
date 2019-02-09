@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Custom register form</title>
+</head>
+
+<body>
+
+    <form>
+
+        <h1>Register</h1>
+
+        <fieldset>
+
+            <legend><span class="section">1</span>Your basic info</legend>
+
+            <label for="name">Name</label>
+            <input type="text" name="name" class="name">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" class="email">
+
+            <label for="password">Password</label>
+            <input type="text" name="password" class="password">
+
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend><span class="section">2</span>Your profile</legend>
+
+            <label for="bio">Bio text</label>
+            <textarea name="bio"></textarea>
+
+            <label for="job">Job role</label>
+            <select name="job">
+
+                <optgroup label="Web">
+                    <option value="frontend-developer">Frontend Developer</option>
+                    <option value="php-developer">PHP Developer</option>
+                    <option value="python-developer">Python/Django Developer</option>
+                    <option value="wordpress-developer">Wordpress Developer</option>
+                </optgroup>
+
+                <optgroup label="Mobile">
+                    <option value="android-developer">Android Developer</option>
+                    <option value="ios-developer">iOS Developer</option>
+                    <option value="mobile-designer">Mobile Designer</option>
+                </optgroup>
+
+            </select>
+
+            <label>Interests: </label>
+
+            <div class="interests">
+
+                <input type="checkbox" value="development" name="user-interest">
+                <label for="development" class="light">Development</label>
+
+                <input type="checkbox" value="design" name="user-design">
+                <label for="design" class="light">Design</label>
+
+                <input type="checkbox" value="other" name="user-design">
+                <label for="other" class="light">Other</label>
+
+            </div>
+
+        </fieldset>
+
+        <button type="submit">Sign up</button>
+
+    </form>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
